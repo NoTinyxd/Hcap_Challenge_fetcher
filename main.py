@@ -2,8 +2,7 @@ import requests
 import re
 import base64
 import json
-import playwright.sync_api as sync_playwright
-
+from playwright.sync_api import sync_playwright
 sitekey = "a9b5fb07-92ff-493f-86fe-352a2803b3df"
 headers = {
     "accept": "application/json",
