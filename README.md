@@ -1,7 +1,5 @@
 # Hcap_Challenge_fetcher
 
-Reverse engineered hCaptcha challenge fetcher. Gets the full captcha challenge from hCaptcha's API without a browser.
-
 ![output](output.png)
 
 ## What it does
@@ -31,7 +29,5 @@ Returns the full challenge JSON including `key`, `request_type`, `tasklist`, and
 
 ## Notes
 
-- Tested on Discord (`a9b5fb07-92ff-493f-86fe-352a2803b3df`)
-- Challenge type varies — currently seeing `image_drag_drop`
 - `checkcaptcha` not implemented — this only fetches the challenge
 - HSW PoW is solved by running `hsw.js` inside a headless Chromium browser via Playwright — not a pure Python implementation
