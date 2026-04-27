@@ -20,7 +20,7 @@ playwright install chromium
 ## Usage
 
 ```
-python h.py
+python main.py
 ```
 
 ## Output
