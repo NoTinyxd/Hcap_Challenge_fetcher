@@ -67,6 +67,15 @@ with sync_playwright() as p:
     page.evaluate(hsw)  # we store the loaded hsw function
     n_val = page.evaluate(f'hsw("{req}")')  # get n value
     print(f"result {n_val}")  # print n value
+#or use camoufox instead of playwright
+# from camoufox.sync_api import Camoufox
+
+# with Camoufox(headless=True) as browser:
+#     page = browser.new_page()
+#     page.evaluate(hsw)
+#     n_val = page.evaluate(f'hsw("{req}")')
+#     print(f"result {n_val}")
+
 # get cap
 
 h = {
