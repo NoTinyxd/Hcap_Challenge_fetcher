@@ -3,6 +3,10 @@ import re
 import base64
 import json
 from playwright.sync_api import sync_playwright
+try:
+    u_input = input("hsw.js/hsj.js/hsl.js: ") #hsw works for now only, hsj & hsl later
+except KeyboardInterrupt:
+    pass
 def check_config(sitekey):
     #sitekey = "a9b5fb07-92ff-493f-86fe-352a2803b3df"
     headers = {
@@ -65,7 +69,7 @@ def js_link(js:str):
     #print("got hsw js length:", len(url_t))  # print the length of hsw.js
     return url_t
 
-url_t=js_link("hsw.js")
+url_t=js_link(u_input)
 
 def js_execute(url_t):
 
@@ -124,3 +128,4 @@ print(getcap.json())
 
 with open('res.json', 'w') as f:
     json.dump(getcap.json(), f,indent=4)
+    
