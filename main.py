@@ -121,3 +121,6 @@ getcap = requests.post(
 
 print(getcap.status_code)
 print(getcap.json())
+
+with open('res.json', 'w') as f:
+    json.dump(getcap.json(), f,indent=4)
