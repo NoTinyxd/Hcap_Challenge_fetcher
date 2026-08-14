@@ -122,5 +122,10 @@ def hsw():
     print(getcap.status_code)
     print(getcap.json())
 
-    with open('res.json', 'w') as f:
-        json.dump(getcap.json(), f,indent=4)
+    import os
+
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    res_path = os.path.join(root_dir, 'res.json')
+
+    with open(res_path, 'w') as f:
+        json.dump(getcap.json(), f, indent=4)
