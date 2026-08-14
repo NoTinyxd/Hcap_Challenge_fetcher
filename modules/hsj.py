@@ -3,7 +3,7 @@ import re
 import base64
 import json 
 def hsj():
-    motiondata=''
+    motiondata = ''  # Use your own motion data or generate it with your script.
     sitekey='4c672d35-0701-42b2-88c3-78380b0db560'
     def check_config(sitekey):
         headers = {
