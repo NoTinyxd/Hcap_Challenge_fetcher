@@ -38,3 +38,4 @@ modules/
 - `checkcaptcha` not implemented - this only fetches the challenge
 - PoW is solved by running the site's own JS (`hsw.js`/`hsj.js`/`hsl.js`) inside a headless browser via Camoufox, not a pure Python implementation
 - `sitekey` is hardcoded per mode (Discord's for hsw, a different one for hsj/hsl) - swap it if you're targeting something else
+- `motiondata` in hsj/hsl is left empty (`''`) - add your own or write your own code to generate motion data
