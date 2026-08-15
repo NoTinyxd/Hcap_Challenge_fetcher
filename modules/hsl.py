@@ -3,8 +3,8 @@ import re
 import base64
 import json 
 def hsl():
-    motiondata=''
-    sitekey='4c672d35-0701-42b2-88c3-78380b0db560'
+    motiondata='' #replace with ur own motiondata
+    sitekey='4c672d35-0701-42b2-88c3-78380b0db560' 
     def check_config(sitekey):
         headers = {
                 "accept": "application/json",
